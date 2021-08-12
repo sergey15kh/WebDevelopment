@@ -1,0 +1,28 @@
+.slick-dots {
+    margin-top: 126px;
+
+    display: flex;
+    justify-content: center;
+
+    li {
+        margin-right: 9px;
+        width: 15px;
+        height: 15px;
+
+        button {
+            overflow: hidden;
+            border: none;
+            background-color: $color-secondary;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            text-indent: 9999px;
+            transition: 200ms all ease-in-out;
+
+            &:hover {
+                background-color: #3949ab;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.about_us {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 120px;
+
+    .layout {
+        .about_us-wrapper {
+            margin-top: 124px;
+            display: flex;
+            justify-content: space-between;
+
+            .about-us__item {
+                width: 254px;
+                text-align: center;
+
+                .about-us__item_img {
+                    margin: 0 auto;
+                }
+                .about-us__item_title {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    color: $color-primary;
+                    margin-top: 39px;
+                }
+                .about-us__item_text {
+                    margin-top: 26px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 15px;
+                    line-height: 1.47;
+                    letter-spacing: 0.75px;
+                    text-align: center;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

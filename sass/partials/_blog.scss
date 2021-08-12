@@ -1,0 +1,102 @@
+.blog {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 125px 115px 125px 114px;
+    background-color: #e4fdf9;
+
+    .layout {
+        .wrapper-blog {
+            margin-top: 127px;
+
+            .blog_item {
+                overflow: hidden;
+
+                .blog_item-wrapper {
+                    display: flex;
+
+                    .blog_item_img {
+                        flex: 0 0 49.999%;
+                    }
+
+                    .blog_item_text {
+                        flex: 0 0 49.999%;
+                        margin-top: 61px;
+                        margin-left: 25px;
+
+                        a {
+                            font-size: 25px;
+                            font-weight: 600;
+                            line-height: 0.88;
+                            letter-spacing: 1.25px;
+                            text-align: center;
+                            color: $color-primary;
+
+                            &:hover {
+                                color: $color-secondary;
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .blog_item_text-file {
+                            margin: 28px 0px;
+                            display: flex;
+
+                            .file-date {
+                                .fa-calendar-alt {
+                                    margin-right: 13px;
+                                }
+
+                                span {
+                                    font-size: 17px;
+                                    font-weight: 600;
+                                    line-height: 1.29;
+                                    letter-spacing: 0.85px;
+                                    color: $color-primary;
+                                }
+                            }
+
+                            .file-category {
+                                margin-left: 40px;
+
+                                .fa-file {
+                                    margin-right: 13px;
+                                }
+
+                                span {
+                                    font-size: 17px;
+                                    font-weight: 600;
+                                    line-height: 1.29;
+                                    letter-spacing: 0.85px;
+                                    color: $color-primary;
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 15px;
+                            line-height: 1.47;
+                            letter-spacing: 0.75px;
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .blog-btn {
+            margin-top: 125px;
+
+            .btn-secondary {
+                margin: 0 auto;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

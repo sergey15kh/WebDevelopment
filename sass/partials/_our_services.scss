@@ -1,0 +1,91 @@
+.our_services {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 125px;
+    padding: 173px 113px 126px 118px;
+    background-color: $color-bg;
+
+    .layout {
+        .wrapepr_services {
+            margin-top: 112px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .services__item {
+                padding: 58px 49px 39px 50px;
+                background-color: #fff;
+                width: 370px;
+                height: 438px;
+                text-align: center;
+                margin-bottom: 31px;
+                transition: 300ms all ease-in-out;
+    
+                .services__item_img {
+                    margin-bottom: 38px;
+                    background-image: url(../images/icon_smartphone.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 62px;
+                }
+
+                .services__item_title {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    letter-spacing: 1px;
+                    color: $color-primary;
+                    margin-bottom: 26px;
+                }
+                .services__item_text {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 15px;
+                    line-height: 1.67;
+                    letter-spacing: 0.75px;
+                    color: $color-primary;
+                    margin-bottom: 43px;
+                }
+                .services__item_btn {
+                    margin: 0 auto;
+    
+                    .btn-item {
+                        margin: 0 auto;
+
+                        &:hover {
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.35);
+                    background-color: #00897b;
+                    cursor: pointer;
+
+                    .services__item_img {
+                        background-image: url(../images/icon_smartphone-white.png);
+                    }
+
+                    .services__item_title {
+                        color: $color-white;
+                    }
+
+                    .services__item_text {
+                        color: $color-white;
+                    }
+
+                    .services__item_btn {
+                        .btn-item {
+                            border: solid 2px $color-white;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

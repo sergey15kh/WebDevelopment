@@ -1,0 +1,19 @@
+footer {
+	display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+	padding: 20px 0px;
+	background-color: $color-white;
+	
+	.layout {
+		p {
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.1;
+			letter-spacing: 1px;
+			text-align: center;
+			color: $color-primary;
+		}
+	}
+}

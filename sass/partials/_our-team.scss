@@ -1,0 +1,126 @@
+.our-team {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 122px 116px 124px 115px;
+    background-color: #ffffff;
+
+    .layout {
+        .our-team-wrapper {
+            margin-top: 127px;
+
+            .our-team_slider {
+                .our-team__item {
+                    width: 370px;
+    
+                    .our-team__item_img {
+                        img {
+                            width: 370px;
+                            height: 320px;
+                        }
+                    }
+    
+                    .our-team__item_title {
+                        margin-top: 38px;
+    
+                        h4 {
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 1.1;
+                            letter-spacing: 1px;
+                            text-align: center;
+                            color: $color-primary;
+                        }
+                    }
+    
+                    .our-team__item_text {
+                        margin-top: 12px;
+    
+                        p {
+                            font-size: 15px;
+                            line-height: 1.47;
+                            letter-spacing: 0.75px;
+                            text-align: center;
+                            color: $color-primary;
+                        }
+                    }
+    
+                    .our-team__item_social {
+                        margin-top: 29px;
+                        
+                        .social__menu {
+                            display: flex;
+                            justify-content: center;
+    
+                            &_item {
+                                margin-right: 27px;
+                                width: 50px;
+                                height: 50px;
+                                background-color: #f0f1f1;
+                                border-radius: 10px;
+                                transition: 200ms all ease-in-out;
+    
+                                &-link {
+                                    display: block;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    font-size: 30px;
+                                    color: $color-secondary;
+                                    transition: 200ms all ease-in-out;
+    
+                                    .fab, .fas  {
+                                    }
+                                    .fa-facebook-f {
+                                    }
+                                    .fa-twitter {
+                                    }
+                                    .fa-comments {
+                                    }
+                                    .fa-dribbble {
+                                    }
+                                }
+    
+                                &:first-child:hover {
+                                    background-color: #3949ab;
+    
+                                    .social__menu_item-link {
+                                        color: $color-white;
+                                    }
+                                }
+    
+                                &:nth-child(2):hover {
+                                    background-color: #1da1f2;
+    
+                                    .social__menu_item-link {
+                                        color: $color-white;
+                                    }
+                                }
+    
+                                &:nth-child(3):hover {
+                                    background-color: #f76700;
+    
+                                    .social__menu_item-link {
+                                        color: $color-white;
+                                    }
+                                }
+    
+                                &:last-child:hover {
+                                    background-color: #d63c7a;
+    
+                                    .social__menu_item-link {
+                                        color: $color-white;
+                                    }
+                                }
+    
+                                &:last-child {
+                                    margin-right: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

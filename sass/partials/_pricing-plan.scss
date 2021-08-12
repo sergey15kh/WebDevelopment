@@ -1,0 +1,131 @@
+.pricing-plan {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    padding: 127px 115px 125px 117px;
+    background-color: #f0f1f1;
+    
+    .layout {
+        .wrapper-pricing-plan {
+            margin-top: 126px;
+            display: flex;
+            justify-content: space-between;
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .pricing-plan__item {
+                max-width: 370px;
+                background-color: $color-white;
+                transition: 300ms all ease-in-out;
+
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    margin-bottom: 50px;
+                    margin-right: 50px;
+                }
+
+                .pricing-plan__item_title {
+                    background-color: #3949ab;
+                    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+                    padding-top: 48px;
+
+                    h4 {
+                        font-size: 25px;
+                        line-height: 0.88;
+                        letter-spacing: 1.25px;
+                        font-weight: normal;
+                        text-align: center;
+                        color: $color-white;
+                    }
+
+                    .pricing-plan__item_month {
+                        padding-top: 48px;
+                        padding-bottom: 68px;
+                        display: flex;
+                        justify-content: center;
+
+                        span {
+                            font-size: 50px;
+                            line-height: 0.44;
+                            letter-spacing: 2.5px;
+                            color: $color-white;
+                            position: relative;
+
+                            &::before {
+                                content: '$';
+                                font-size: 25px;
+                                z-index: 5;
+                                color: $color-white;
+                                position: absolute;
+                                top: 0;
+                                left: -15px;
+                            }
+
+                        }
+                        p {
+                            font-size: 17px;
+                            line-height: 1.29;
+                            letter-spacing: 0.85px;
+                            color: $color-white;
+                        }
+                    }
+                }
+
+                .pricing-plan__item_about {
+                    margin-top: 48px;
+                    padding: 0px 96px;
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        position: relative;
+                        font-size: 17px;
+                        font-weight: 300;
+                        line-height: 1.29;
+                        letter-spacing: 0.85px;
+                        text-align: center;
+                        color: $color-primary;
+                        margin-bottom: 52px;
+
+                        &::after {
+                            content: '';
+                            background-color: #bfbfbf;
+                            width: 178px;
+                            height: 1px;
+                            position: absolute;
+                            bottom: -14px;
+                            left: 0;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+                .pricing-plan__item_btn {
+                    margin-top: 77px;
+                    padding-bottom: 63px;
+
+                    .btn-item {
+                        margin: 0 auto;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 0px 3px 25px 0 rgba(0, 0, 0, 0.35);
+                    cursor: pointer;
+
+                    .btn-item {
+                        background-color: $color-secondary;
+                        color: $color-white;
+                        border: solid 2px $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
